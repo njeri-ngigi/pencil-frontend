@@ -127,5 +127,9 @@
       }
     }
   },
-  "defaultProject": "pencil-frontend"
+  "defaultProject": "pencil-frontend",
+  "cli": {
+    "analytics": "67f761c8-0b03-44cb-a4df-41182eff3d12",
+    "packageManager": "yarn"
+  }
 }
