@@ -1,0 +1,60 @@
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login {
+  @extend .flex-center;
+  height: 100%;
+  background-color: #edf5e1;
+
+  hr {
+    width: 70%;
+    overflow: hidden;
+    position: absolute;
+    border: none;
+    height: 1px;
+    background-color: black;  
+  }
+  .vl{
+    height: 100%;  
+    width: 1px;
+    background-color: black;
+    position: absolute;
+  }
+
+  .outside-card {
+    position: absolute;
+    border: 1px solid black;
+    min-width: 30%;
+    min-height: 50%;
+    left: 40%;
+  }
+
+  .card {
+    @extend .flex-center;
+    background-color: #5cdb95;
+    max-width: 50%;
+    padding: 7%;
+    z-index: 2;
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 1.5em;
+      font-family: "Amatic SC";
+    }
+  
+    .login-button {
+      font-size: 1.3em;
+      border: 1px solid black;
+      padding: 7px 25px;
+      color: black;
+       
+      span {
+        padding-left: 10px;
+      }
+    }
+  }
+}

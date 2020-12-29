@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "pencil-frontend-shalon": {
+      "hosting": {
+        "pencil-frontend": [
+          "pencil-frontend-shalon"
+        ]
+      }
+    }
+  }
+}
