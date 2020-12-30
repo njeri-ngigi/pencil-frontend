@@ -17,11 +17,11 @@ This is project is built using Angular 8 and Firebase. It allows users to login 
 The app is hosted on Firebase and can be accessed on https://pencil-frontend-shalon.firebaseapp.com/
 
 ## Pages
-### Home page
+### Home page > Loading page > Google login prompt page > Editor page
 <img width="1440" alt="Screenshot 2020-12-31 at 00 56 00" src="https://user-images.githubusercontent.com/28973383/103383302-46381e00-4b03-11eb-9cbb-8ff3484809cc.png">
-### Loading page
+
 <img width="1440" alt="Screenshot 2020-12-31 at 00 56 08" src="https://user-images.githubusercontent.com/28973383/103383308-4b956880-4b03-11eb-95b7-1911c1456a13.png">
-### Google login prompt page
+
 <img width="1440" alt="Screenshot 2020-12-31 at 00 56 22" src="https://user-images.githubusercontent.com/28973383/103383310-4cc69580-4b03-11eb-8864-c11e39821821.png">
-### Editor page
+
 <img width="1440" alt="Screenshot 2020-12-31 at 00 57 42" src="https://user-images.githubusercontent.com/28973383/103383311-4d5f2c00-4b03-11eb-81a7-1312b50d8a74.png">
