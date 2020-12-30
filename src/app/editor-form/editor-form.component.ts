@@ -1,5 +1,6 @@
 import { Component, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
-import { faCheckCircle, faSnowflake } from '@fortawesome/free-solid-svg-icons';
+import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
+// import { MathJaxDirective } from 'ngx-mathjax';
 import { AuthService } from '../services/auth.service';
 import { NotesService } from '../services/notes.service';
 
@@ -12,7 +13,6 @@ declare const MediumEditor: any;
 })
 export class EditorFormComponent implements AfterViewInit {
   faCheck = faCheckCircle;
-  faSpinner = faSnowflake;
   showSavedAt = false;
   notes = '';
   lastSaved = new Date();
