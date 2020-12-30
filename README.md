@@ -1,27 +1,27 @@
-# PencilFrontend
+# Pencil Frontend
+This is project is built using Angular 8 and Firebase. It allows users to login using their Google account and edit a notepad.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5.
 
-## Development server
+## Set up
+### Requirements
+- Angular CLI
+- Yarn 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Steps
+- clone the repo
+- run `yarn install`
+- run `yarn start` to start the server
+-  Navigate to `http://localhost:4200/`
 
-## Code scaffolding
+## Hosting
+The app is hosted on Firebase and can be accessed on https://pencil-frontend-shalon.firebaseapp.com/
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Pages
+### Home page
+<img width="1440" alt="Screenshot 2020-12-31 at 00 56 00" src="https://user-images.githubusercontent.com/28973383/103383302-46381e00-4b03-11eb-9cbb-8ff3484809cc.png">
+### Loading page
+<img width="1440" alt="Screenshot 2020-12-31 at 00 56 08" src="https://user-images.githubusercontent.com/28973383/103383308-4b956880-4b03-11eb-95b7-1911c1456a13.png">
+### Google login prompt page
+<img width="1440" alt="Screenshot 2020-12-31 at 00 56 22" src="https://user-images.githubusercontent.com/28973383/103383310-4cc69580-4b03-11eb-8864-c11e39821821.png">
+### Editor page
+<img width="1440" alt="Screenshot 2020-12-31 at 00 57 42" src="https://user-images.githubusercontent.com/28973383/103383311-4d5f2c00-4b03-11eb-81a7-1312b50d8a74.png">
