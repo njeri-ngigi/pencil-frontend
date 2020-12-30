@@ -12,14 +12,13 @@
 
   hr {
     width: 900px;
-    overflow: hidden;
     position: absolute;
     border: none;
     height: 1px;
     background-color: black;  
   }
   .vl{
-    height: 120%;  
+    height: 100%;  
     width: 1px;
     background-color: black;
     position: absolute;
@@ -31,7 +30,6 @@
     width: 250px;
     height: 150px;
     padding: 8.5em;
-    overflow: hidden;
     margin-left: 15em;
   }
 
