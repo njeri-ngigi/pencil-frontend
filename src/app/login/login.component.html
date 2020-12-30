@@ -5,6 +5,7 @@
   <div class="card">
     <h1>Welcome to Pencil</h1>
     <button 
+      *ngIf="!isLoggedIn"
       mat-button
       color="primary"
       class="login-button"
@@ -13,5 +14,10 @@
       <fa-icon [icon]="faGoogle"></fa-icon>
       <span>Continue with Google</span>
     </button>
+
+    <fa-icon 
+      *ngIf="isLoggedIn"
+      [icon]="faSpinner"
+      class="spinner"></fa-icon>
   </div>
 </div>

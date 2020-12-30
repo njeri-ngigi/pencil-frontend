@@ -1,0 +1,15 @@
+<div class="editor">
+  <div class="navbar">
+    <span>Pencil</span>
+    <fa-icon [icon]="faPencil"></fa-icon>
+    <button 
+      mat-button
+      class="logout"
+      matTooltip="Logout"
+      (click)="logout()">
+      <fa-icon [icon]="faLogout"></fa-icon>
+    </button>
+  </div>
+
+  <app-editor-form></app-editor-form>
+</div>

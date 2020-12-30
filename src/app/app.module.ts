@@ -10,12 +10,15 @@ import { AppFirebaseModule } from './app-firebase.module';
 import { AuthService } from './services/auth.service';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AppMaterialModule } from './app-material.module';
+import { EditorFormComponent } from './editor-form/editor-form.component';
+import { MathJaxModule } from 'ngx-mathjax';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     EditorComponent,
+    EditorFormComponent,
   ],
   imports: [
     BrowserModule,
@@ -23,6 +26,11 @@ import { AppMaterialModule } from './app-material.module';
     AppFirebaseModule,
     AppMaterialModule,
     FontAwesomeModule,
+    MathJaxModule.forRoot({
+      version: '2.7.5',
+      config: 'TeX-AMS_HTML',
+      hostname: 'cdnjs.cloudflare.com'
+    })
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

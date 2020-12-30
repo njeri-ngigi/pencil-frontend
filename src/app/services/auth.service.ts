@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/auth';
 import firebase from 'firebase';
 import { Router } from '@angular/router';
+import { User } from '../shared/interfaces/user';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -20,25 +22,39 @@ export class AuthService {
         this.router.navigate(['/editor']);
       } else {
         localStorage.removeItem('user');
-        this.router.navigate(['/login']);
+        this.router.navigate(['/']);
       }
     });
   }
 
-  GoogleAuth(): any {
+
+
+  GoogleAuth(): Observable<boolean> {
     const provider = new firebase.auth.GoogleAuthProvider();
-    return this.angularFireAuth.signInWithRedirect(provider)
+
+    return new Observable((observer) => {
+      this.angularFireAuth.signInWithRedirect(provider)
       .catch((error) => {
-        console.log(error);
+        console.error(error);
         window.alert('Login Failed. Please try again.');
+        observer.next(false);
       });
+    });
   }
 
-  LogOut(): any {
-    return this.angularFireAuth.signOut()
-      .catch((error) => {
-        console.log(error);
-        window.alert('Logout Failed. Please try again.');
-      });
+  LogOut(): void {
+    this.angularFireAuth.signOut()
+    .catch((error) => {
+      console.error(error);
+      window.alert('Logout Failed. Please try again.');
+    });
+
+    localStorage.removeItem('isLoggingIn');
+    localStorage.removeItem('user');
+  }
+
+  getLoggedInUser(): User {
+    const loggedInUser = localStorage.getItem('user') || '{}';
+    return JSON.parse(loggedInUser);
   }
 }

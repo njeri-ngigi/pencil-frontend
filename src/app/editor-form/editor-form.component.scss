@@ -1,0 +1,40 @@
+.editable {
+  margin-top: 5em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .saved {
+    font-family: "Amatic SC";
+    font-size: 1.5em;
+    line-height: 1.3;
+    text-align: center;
+    color: green;
+
+    .check {
+      font-size: 0.7em;
+    }
+  }
+
+  .checking {
+    font-size: 1.5em;
+    font-family: "Amatic SC";
+    padding-bottom: 20px;
+    padding-top: 10px;
+  }
+
+  .canvas {
+    border: 1px solid black;
+    height: 80%;
+    min-height: 500px;
+    width: 70%;
+    align-self: center;
+    line-height: 1.5;
+    outline: none;
+    padding: 20px;
+    letter-spacing: 2px;
+    font-family: "Helvetica Neue";
+    font-size: 1.1em;
+  }
+}

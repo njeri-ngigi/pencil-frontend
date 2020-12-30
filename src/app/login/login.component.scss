@@ -8,10 +8,10 @@
 .login {
   @extend .flex-center;
   height: 100%;
-  background-color: #edf5e1;
+  min-width: 1000px;
 
   hr {
-    width: 70%;
+    width: 900px;
     overflow: hidden;
     position: absolute;
     border: none;
@@ -19,7 +19,7 @@
     background-color: black;  
   }
   .vl{
-    height: 100%;  
+    height: 120%;  
     width: 1px;
     background-color: black;
     position: absolute;
@@ -28,16 +28,20 @@
   .outside-card {
     position: absolute;
     border: 1px solid black;
-    min-width: 30%;
-    min-height: 50%;
-    left: 40%;
+    width: 250px;
+    height: 150px;
+    padding: 8.5em;
+    overflow: hidden;
+    margin-left: 15em;
   }
 
   .card {
     @extend .flex-center;
     background-color: #5cdb95;
-    max-width: 50%;
-    padding: 7%;
+    width: 300px;
+    height: 150px;
+
+    padding: 6em;
     z-index: 2;
 
     h1 {
@@ -56,5 +60,20 @@
         padding-left: 10px;
       }
     }
+
+    .spinner {
+      font-size: 2em;
+      animation: spin 2s infinite;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateY(180deg);
   }
 }

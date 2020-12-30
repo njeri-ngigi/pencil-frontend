@@ -1,0 +1,22 @@
+<div class="editable">
+  <div class="saved" *ngIf="showSavedAt">
+    <span>
+      Saved 
+      <sup><fa-icon class="check" [icon]="faCheck"></fa-icon></sup>
+    </span>
+    <p>
+      <i>{{ lastSaved | date:'long' }}</i>
+    </p>
+  </div>
+
+  <span class="checking" *ngIf="!showSavedAt">Checking for saved notes ...</span>
+  <div
+    #editable
+    class="canvas">
+  </div>
+</div>
+
+<fa-icon 
+  *ngIf="loading"
+  [icon]="faSpinner"
+  class="spinner"></fa-icon>
